@@ -12,8 +12,10 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext con =new ClassPathXmlApplicationContext("springContext.xml");
-         Bank b = (Bank)con.getBean("statebank");
-         b.name();
+         //Bank b = (Bank)con.getBean("statebank");
+         //b.name();
+         Employee e =(Employee)con.getBean("employeedetails");
+         e.Display();
          
         
     }

@@ -24,12 +24,14 @@
          <list>
         <ref bean="c1" />
               <ref bean="c2" />
-        
-        
         </list>
          </constructor-arg>
          
           </bean>
           
-                
+          
+         <bean id="a" class="org.java.SpringTut.firstSpring.demoA" >
+         </bean>
+                 <bean id="b" class="org.java.SpringTut.firstSpring.demoB" autowire="byName">
+         </bean>
                 </beans>

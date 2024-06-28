@@ -3,31 +3,47 @@ package org.java.SpringTut.firstSpring;
 import java.util.*;
 
 public class Employee {
-	int id;
-	String name;
-	List<Companies> Companies;
+	private int id;
+	private String name;
+	private int salary;
+	Employee(int id,String name,int salary)
 	
-	
-	Employee ()
 	{
-		System.out.println("Conssturctor invoked");
-	}
-	Employee(int id ,String name ,List<Companies> Companies)
-	{
-		super();
 		this.id=id;
 		this.name=name;
-		this.Companies= Companies;
+		this.salary=salary;
 	}
 	
-	void Display()
-	{
-		System.out.println(id+" "+ name);
-Iterator<Companies> itr= Companies.iterator();
-while(itr.hasNext()){  
-    System.out.println(itr.next());  
+public int getId()
+{
+	return id;
+	
 }  
-	}
 
+public int getSalary()
+{
+	return salary;
+	
+} 
+public String getName()
+{
+	return name;
+	
+}
+public void setId(int id)
+{
+	this.id=id;
+
+	}
+public void setName(String name)
+{
+	this.name=name;
+
+	}
+public void setSalary(int salary)
+{
+	this.salary=salary;
+
+	}
 
 }

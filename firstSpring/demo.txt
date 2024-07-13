@@ -10,3 +10,7 @@ Autowiring feature of spring framework enables you to inject the object dependen
 
 Autowiring can't be used to inject primitive and string values. It works with reference only.
 A method that returns instance of a class is called factory method.
+
+#AOp breaks the program logic into distinct parts called concerns
+#advice-whaat(before and after)
+#point cut -where (it should executed)

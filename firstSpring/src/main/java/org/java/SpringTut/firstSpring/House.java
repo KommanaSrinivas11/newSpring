@@ -1,6 +1,6 @@
 package org.java.SpringTut.firstSpring;
 
-public class House {
+public class House implements HouseInterface{
 	
 	
 	public void enter() {

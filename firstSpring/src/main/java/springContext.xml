@@ -29,19 +29,6 @@
           <constructor-arg value="2023" type="int"></constructor-arg>
          <constructor-arg value="Tcs" type="String"></constructor-arg>
           </bean>
-          <bean id="employeedetails" class="org.java.SpringTut.firstSpring.Employee">
-          
-          <constructor-arg value="10" type="int"></constructor-arg>
-         <constructor-arg value="Srinivas" type="String"></constructor-arg>
-         
-         <constructor-arg>
-         <list>
-        <ref bean="c1" />
-              <ref bean="c2" />
-        </list>
-         </constructor-arg>
-         
-          </bean>
          
          <bean id="a" class="org.java.SpringTut.firstSpring.demoA" >
          </bean>
@@ -61,7 +48,12 @@
 </bean>  
 
 
-<bean id="eod" class="org.java.SpringTut.firstSpring.EmployeeDetails">
-<property name="jdbcTemplate" ref="jdbcTemplate"></property>  
-</bean>
+ <bean id="house"  class="org.java.SpringTut.firstSpring.House"></bean>
+ <bean id="aopdemo" class="org.java.SpringTut.firstSpring.AspectDemo"></bean>
+ 
+ <bean class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator"></bean>
+ 
+ 
+ 
+         
                 </beans>
